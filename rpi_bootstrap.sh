@@ -15,7 +15,7 @@ sudo systemctl start ssh
 
 #docker
 echo "Install docker"
-curl -fsSL https://get.docker.org -o get-docker.sh &&
+curl -fsSL https://get.docker.com -o get-docker.sh
 sudo sh get-docker.sh
 
 echo "Add user pi to docker group"
@@ -37,6 +37,7 @@ cd ~/
 git clone https://github.com/tlogik/rpi-tig.git
 cd rpi-tig/
 git checkout --track origin/develop
-sh start.sh
+#sh start.sh
 
 echo "Done - Now REBOOT"
+sudo reboot now
